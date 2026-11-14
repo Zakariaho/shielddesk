@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Help Center</h2>
+<form method="get" action="/search">
+  <input name="q" value="{{ q }}" placeholder="Search help articles">
+  <button type="submit">Search</button>
+</form>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+{% if q and not error %}<p>Results for: {{ q }}</p>{% endif %}
+<ul>{% for i in items %}<li><b>{{ i['title'] }}</b> - {{ i['answer'] }}</li>{% endfor %}</ul>
+{% endblock %}

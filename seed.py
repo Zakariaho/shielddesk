@@ -5,11 +5,12 @@ Creates shielddesk.db and exports data/students.csv.
 All names, IDs, e-mails and phone numbers are randomly generated and fake.
 """
 import csv
-import hashlib
 import itertools
 import os
 import random
 import sqlite3
+
+from werkzeug.security import generate_password_hash
 
 import config
 
@@ -46,8 +47,9 @@ FAQ = [
 ]
 
 
-def md5(password):
-    return hashlib.md5(password.encode()).hexdigest()  # nosec B324 - mirrors the app's v0 hashing so seeded logins work
+def hash_pw(password):
+    """Salted scrypt hash (werkzeug) - replaces the fast unsalted MD5 of v0."""
+    return generate_password_hash(password, method="scrypt")
 
 
 def main():
@@ -89,11 +91,11 @@ def main():
 
     # 1 admin, 5 staff, 50 students
     db.execute("INSERT INTO users (username,password_hash,role,full_name,email) VALUES (?,?,?,?,?)",
-               ("admin", md5("Admin@123"), "admin", "System Administrator", "admin@shielddesk.test"))
+               ("admin", hash_pw("Admin@123"), "admin", "System Administrator", "admin@shielddesk.test"))
     for i in range(1, 6):
         first, last = names[i - 1]
         db.execute("INSERT INTO users (username,password_hash,role,full_name,email) VALUES (?,?,?,?,?)",
-                   (f"staff{i}", md5("Staff@123"), "staff", f"{first} {last}", f"staff{i}@shielddesk.test"))
+                   (f"staff{i}", hash_pw("Staff@123"), "staff", f"{first} {last}", f"staff{i}@shielddesk.test"))
 
     students = []
     for i in range(1, 51):
@@ -107,7 +109,7 @@ def main():
         db.execute("""INSERT INTO users
             (username,password_hash,role,full_name,student_id,email,phone,date_of_birth,program)
             VALUES (?,?,?,?,?,?,?,?,?)""",
-                   (username, md5("Student@123"), "student", f"{first} {last}",
+                   (username, hash_pw("Student@123"), "student", f"{first} {last}",
                     student_id, email, phone, dob, program))
         students.append([f"{first} {last}", student_id, email, phone, dob, program])
 

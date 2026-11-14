@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>SLA calculator</h2>
+{% if error %}<p class="error">{{ error }}</p>{% else %}<p>{{ expr }} = {{ result }}</p>{% endif %}
+{% endblock %}

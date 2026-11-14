@@ -4,5 +4,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 RUN python seed.py
+ENV SHIELDDESK_HOST=0.0.0.0
 EXPOSE 5000
 CMD ["python", "app.py"]

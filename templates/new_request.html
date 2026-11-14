@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h2>Submit a request</h2>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
 <form method="post" action="/requests/new">
   <label>Student ID</label>
   <input name="student_id">
