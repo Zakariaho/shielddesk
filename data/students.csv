@@ -1,0 +1,51 @@
+full_name,student_id,email,phone,date_of_birth,program
+Khalid Sultan,20248729,student01@student.shielddesk.test,+971-50-555-8021,2000-11-17,Computer Science
+Dana Rahman,20247785,student02@student.shielddesk.test,+971-50-555-4154,2005-09-19,Computer Science
+Maya Saleh,20246614,student03@student.shielddesk.test,+971-50-555-6769,2002-05-13,Business Analytics
+Khalid Qasim,20242873,student04@student.shielddesk.test,+971-50-555-6802,2002-04-24,Cybersecurity
+Amira Farouk,20246281,student05@student.shielddesk.test,+971-50-555-5304,2006-08-17,Computer Science
+Salma Tahir,20243052,student06@student.shielddesk.test,+971-50-555-6984,2001-03-13,Business Analytics
+Adel Qasim,20244591,student07@student.shielddesk.test,+971-50-555-0493,2004-06-17,Software Engineering
+Faisal Iqbal,20242112,student08@student.shielddesk.test,+971-50-555-1810,2001-06-08,Business Analytics
+Faisal Darwish,20249488,student09@student.shielddesk.test,+971-50-555-6655,2004-03-14,Computer Science
+Karim Siddiqui,20241089,student10@student.shielddesk.test,+971-50-555-2528,2006-03-13,Cybersecurity
+Yusuf Nasser,20245019,student11@student.shielddesk.test,+971-50-555-7033,2003-03-24,Software Engineering
+Salma Siddiqui,20249968,student12@student.shielddesk.test,+971-50-555-3188,2003-10-05,Electrical Engineering
+Khalid Mahmoud,20244707,student13@student.shielddesk.test,+971-50-555-9628,2005-05-18,Business Analytics
+Omar Sultan,20247432,student14@student.shielddesk.test,+971-50-555-7973,2000-07-01,Computer Science
+Zayed Darwish,20242704,student15@student.shielddesk.test,+971-50-555-5601,2006-03-21,Electrical Engineering
+Hamdan Barakat,20248616,student16@student.shielddesk.test,+971-50-555-0053,2005-07-26,Business Analytics
+Faisal Aziz,20246043,student17@student.shielddesk.test,+971-50-555-4994,2005-09-21,Business Analytics
+Adel Zahra,20244565,student18@student.shielddesk.test,+971-50-555-3222,2004-11-10,Software Engineering
+Salma Al Mansoori,20241589,student19@student.shielddesk.test,+971-50-555-1203,2000-11-21,Software Engineering
+Tariq Farouk,20248043,student20@student.shielddesk.test,+971-50-555-3590,2005-06-06,Computer Science
+Karim Nasser,20247366,student21@student.shielddesk.test,+971-50-555-9987,2001-05-25,Business Analytics
+Sara Nasser,20241917,student22@student.shielddesk.test,+971-50-555-4945,2000-05-23,Software Engineering
+Hamdan Al Mansoori,20243077,student23@student.shielddesk.test,+971-50-555-1815,2002-09-01,Software Engineering
+Omar Nasser,20242631,student24@student.shielddesk.test,+971-50-555-8985,2006-03-14,Business Analytics
+Omar Khan,20242444,student25@student.shielddesk.test,+971-50-555-8613,2003-08-22,Business Analytics
+Hana Saleh,20241393,student26@student.shielddesk.test,+971-50-555-6957,2000-05-23,Software Engineering
+Hamdan Nasser,20244493,student27@student.shielddesk.test,+971-50-555-8508,2004-07-25,Computer Science
+Maya Zahra,20242212,student28@student.shielddesk.test,+971-50-555-6963,2003-08-16,Software Engineering
+Faisal Zahra,20243420,student29@student.shielddesk.test,+971-50-555-0266,2006-09-20,Software Engineering
+Lina Al Mansoori,20249771,student30@student.shielddesk.test,+971-50-555-3167,2000-01-25,Electrical Engineering
+Yusuf Mahmoud,20249833,student31@student.shielddesk.test,+971-50-555-8547,2004-07-27,Software Engineering
+Omar Tahir,20243334,student32@student.shielddesk.test,+971-50-555-5386,2003-06-24,Business Analytics
+Layla Mahmoud,20249159,student33@student.shielddesk.test,+971-50-555-4299,2004-09-01,Cybersecurity
+Salma Khan,20243993,student34@student.shielddesk.test,+971-50-555-4212,2002-09-22,Electrical Engineering
+Adel Darwish,20248704,student35@student.shielddesk.test,+971-50-555-5173,2006-11-20,Computer Science
+Faisal Qasim,20245052,student36@student.shielddesk.test,+971-50-555-3513,2004-11-06,Computer Science
+Yusuf Rashed,20245867,student37@student.shielddesk.test,+971-50-555-6635,2000-12-13,Electrical Engineering
+Adel Hamdi,20246888,student38@student.shielddesk.test,+971-50-555-9896,2003-07-10,Electrical Engineering
+Hamdan Siddiqui,20247788,student39@student.shielddesk.test,+971-50-555-8971,2001-04-22,Software Engineering
+Hana Barakat,20249128,student40@student.shielddesk.test,+971-50-555-2162,2000-03-18,Computer Science
+Layla Aziz,20242998,student41@student.shielddesk.test,+971-50-555-9205,2004-06-26,Cybersecurity
+Omar Aziz,20243716,student42@student.shielddesk.test,+971-50-555-0136,2001-06-17,Business Analytics
+Sara Darwish,20242944,student43@student.shielddesk.test,+971-50-555-9853,2002-09-07,Software Engineering
+Hana Khan,20248411,student44@student.shielddesk.test,+971-50-555-8175,2006-05-27,Software Engineering
+Hana Rashed,20241166,student45@student.shielddesk.test,+971-50-555-7931,2005-11-24,Software Engineering
+Zayed Haddad,20247195,student46@student.shielddesk.test,+971-50-555-4498,2000-02-20,Software Engineering
+Reem Khan,20244052,student47@student.shielddesk.test,+971-50-555-7383,2004-06-04,Business Analytics
+Reem Nasser,20243370,student48@student.shielddesk.test,+971-50-555-6297,2002-02-15,Business Analytics
+Tariq Siddiqui,20248345,student49@student.shielddesk.test,+971-50-555-0762,2001-02-22,Software Engineering
+Yusuf Khan,20249194,student50@student.shielddesk.test,+971-50-555-8200,2003-05-28,Software Engineering

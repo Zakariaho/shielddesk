@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Requests</h2>
+<table>
+  <tr><th>ID</th><th>Student ID</th><th>Category</th><th>Description</th><th>Status</th><th>Date</th></tr>
+  {% for r in rows %}
+  <tr>
+    <td><a href="/requests/{{ r['id'] }}">{{ r['id'] }}</a></td>
+    <td>{{ r['student_id'] }}</td><td>{{ r['category'] }}</td>
+    <td>{{ r['description'] }}</td><td>{{ r['status'] }}</td><td>{{ r['created_at'] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

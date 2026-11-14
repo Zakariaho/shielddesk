@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Request #{{ r['id'] }}</h2>
+<p><b>Student:</b> {{ r['full_name'] }} ({{ r['student_id'] }})</p>
+<p><b>Contact:</b> {{ r['email'] }} / {{ r['phone'] }}</p>
+<p><b>Category:</b> {{ r['category'] }}</p>
+<p><b>Description:</b> {{ r['description'] }}</p>
+<p><b>Status:</b> {{ r['status'] }} &nbsp; <b>Date:</b> {{ r['created_at'] }}</p>
+{% endblock %}

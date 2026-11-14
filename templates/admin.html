@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Administration</h2>
+<h3>Users</h3>
+<table>
+  <tr><th>ID</th><th>Username</th><th>Role</th><th>Name</th><th>Student ID</th><th>Password hash</th></tr>
+  {% for u in users %}
+  <tr><td>{{ u['id'] }}</td><td>{{ u['username'] }}</td><td>{{ u['role'] }}</td>
+      <td>{{ u['full_name'] }}</td><td>{{ u['student_id'] or '' }}</td><td>{{ u['password_hash'] }}</td></tr>
+  {% endfor %}
+</table>
+<h3>Latest requests</h3>
+<table>
+  <tr><th>ID</th><th>Category</th><th>Status</th><th>Update</th></tr>
+  {% for r in rows %}
+  <tr><td>{{ r['id'] }}</td><td>{{ r['category'] }}</td><td>{{ r['status'] }}</td>
+      <td><form method="post" action="/admin/status" style="display:flex;gap:6px;">
+        <input type="hidden" name="id" value="{{ r['id'] }}">
+        <select name="status" style="margin:0"><option>Open</option><option>In Progress</option><option>Closed</option></select>
+        <button type="submit">Set</button></form></td></tr>
+  {% endfor %}
+</table>
+<h3>SLA calculator</h3>
+<form method="get" action="/admin/sla" style="display:flex;gap:6px;">
+  <input name="expr" value="24*3" style="margin:0"><button type="submit">Calculate</button>
+</form>
+{% endblock %}

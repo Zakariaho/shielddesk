@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.db
+logs/*.log
+ANSWER_KEY*
+.venv/
