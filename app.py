@@ -76,7 +76,7 @@ def health():
 def login():
     error = None
     if request.method == "POST":
-                username = request.form.get("username", "")
+        username = request.form.get("username", "")
         password = request.form.get("password", "")
         password_hash = md5(password)
         query = f"SELECT * FROM users WHERE username = '{username}' AND password_hash = '{password_hash}'"
