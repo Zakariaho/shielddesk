@@ -76,16 +76,14 @@ def health():
 def login():
     error = None
     if request.method == "POST":
-        username = request.form.get("username", "")
+                username = request.form.get("username", "")
         password = request.form.get("password", "")
-        query = f"SELECT * FROM users WHERE username = '{username}'"
+        password_hash = md5(password)
+        query = f"SELECT * FROM users WHERE username = '{username}' AND password_hash = '{password_hash}'"
         user = get_db().execute(query).fetchone()
         if user is None:
             log_auth("LOGIN_FAILED", username)
-            error = "No such user"
-        elif user["password_hash"] != md5(password):
-            log_auth("LOGIN_FAILED", username)
-            error = "Wrong password for this user"
+            error = "Invalid credentials"
         else:
             session["user_id"] = user["id"]
             session["username"] = user["username"]
