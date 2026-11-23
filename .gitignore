@@ -4,3 +4,5 @@ __pycache__/
 logs/*.log
 ANSWER_KEY*
 .venv/
+reports/
+logs/alerts.log
